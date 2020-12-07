@@ -1,0 +1,60 @@
+{
+	"id": "c139ca14-bf56-4145-adce-e124b5113241",
+	"name": "weather",
+	"timestamp": "2020-12-07T05:44:58.391Z",
+	"collection_id": "af4aa29d-6b9d-4035-b05a-15398930cc1a",
+	"folder_id": 0,
+	"environment_id": "d787955e-cfb9-4af7-80cc-e255af14bfbe",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "78387587-2e34-44c4-b514-16f2381a10fd",
+			"name": "get_city_id",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Statusisok,responseisjson": true
+			},
+			"testPassFailCounts": {
+				"Statusisok,responseisjson": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				209,
+				101,
+				135,
+				104
+			],
+			"allTests": [
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 549,
+	"collection": {
+		"requests": [
+			{
+				"id": "78387587-2e34-44c4-b514-16f2381a10fd",
+				"method": "GET"
+			}
+		]
+	}
+}
