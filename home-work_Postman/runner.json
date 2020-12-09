@@ -1,0 +1,102 @@
+{
+	"id": "4b864156-e2a8-41b3-8826-7620310ad625",
+	"name": "weather",
+	"timestamp": "2020-12-09T01:59:21.372Z",
+	"collection_id": "af4aa29d-6b9d-4035-b05a-15398930cc1a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "78387587-2e34-44c4-b514-16f2381a10fd",
+			"name": "get_city_id",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Statusisok,responseisjson": true
+			},
+			"testPassFailCounts": {
+				"Statusisok,responseisjson": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				2204,
+				98,
+				99,
+				101
+			],
+			"allTests": [
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				}
+			]
+		},
+		{
+			"id": "493b3221-5e28-4f1d-b74f-802d7980b2b2",
+			"name": "get_weather",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Statusisok,responseisjson": true
+			},
+			"testPassFailCounts": {
+				"Statusisok,responseisjson": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				104,
+				103,
+				122,
+				107
+			],
+			"allTests": [
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				},
+				{
+					"Statusisok,responseisjson": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 2938,
+	"collection": {
+		"requests": [
+			{
+				"id": "78387587-2e34-44c4-b514-16f2381a10fd",
+				"method": "GET"
+			},
+			{
+				"id": "493b3221-5e28-4f1d-b74f-802d7980b2b2",
+				"method": "GET"
+			}
+		]
+	}
+}

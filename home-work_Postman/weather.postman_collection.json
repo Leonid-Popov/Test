@@ -6,6 +6,80 @@
 	},
 	"item": [
 		{
+			"name": "get_city_id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "84531d6c-969f-484d-9722-86f13a595e63",
+						"exec": [
+							"pm.environment.set(\"city_id\", pm.response.json().id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cddb7a0f-86c4-488b-9a82-7d83d419c88a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "4e095f0c5eebbb6cea4d7ba49d12b843",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "APPID",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/weather?q={{city_name}}&lang=ru",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{city_name}}"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get_weather",
 			"event": [
 				{
@@ -85,80 +159,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "get_city_id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "84531d6c-969f-484d-9722-86f13a595e63",
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "cddb7a0f-86c4-488b-9a82-7d83d419c88a",
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"auth": {
-					"type": "apikey",
-					"apikey": [
-						{
-							"key": "value",
-							"value": "4e095f0c5eebbb6cea4d7ba49d12b843",
-							"type": "string"
-						},
-						{
-							"key": "key",
-							"value": "APPID",
-							"type": "string"
-						},
-						{
-							"key": "in",
-							"value": "query",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://api.openweathermap.org/data/2.5/weather?q={{city_name}}&lang=ru",
-					"protocol": "http",
-					"host": [
-						"api",
-						"openweathermap",
-						"org"
-					],
-					"path": [
-						"data",
-						"2.5",
-						"weather"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "{{city_name}}"
-						},
-						{
-							"key": "lang",
-							"value": "ru"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -188,7 +188,7 @@
 	],
 	"variable": [
 		{
-			"id": "4337372b-63d3-4265-a3c2-902778a669b4",
+			"id": "8980b820-b25e-4bc8-b4d4-0844de40f97c",
 			"key": "collect_var",
 			"value": ""
 		}
